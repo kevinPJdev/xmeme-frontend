@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Card from 'react-bootstrap/Card';
 import '../css/displayboard.css';
 
+//Module to retreive memes and display on the site
+
 export class  DisplayBoard extends Component {
 
   state = {
@@ -9,7 +11,7 @@ export class  DisplayBoard extends Component {
   }
 
   async componentDidMount() {
-    const response= await fetch('/api/memes');
+    const response= await fetch('/memes');
     const data = await response.json();
     this.setState({meme: data});
     console.log(this.state.meme);
@@ -17,7 +19,7 @@ export class  DisplayBoard extends Component {
   render() {
     return (
         <div className="display">
-           {this.state.meme.map((memes,index) => (
+           {this.state.meme.slice(0).reverse().map((memes,index) => (
             <div key={index}>
               <Card style={{ width: '18rem', height: '25rem'}} border="light" bg="dark" text="light">
                 <Card.Title>{memes.username}</Card.Title>
