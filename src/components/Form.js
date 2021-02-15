@@ -57,6 +57,7 @@ export class Form extends Component {
   handleSubmit = (event) => {
     createMeme(this.state);
     event.preventDefault();
+    this.handleClose();
     alert('meme added. Please refresh the page');
 
   };
