@@ -21,7 +21,6 @@ export class Form extends Component {
     this.setState({
       show: false
     })
-    window.location.reload(true);
   };
 
   handleShow = () => {
@@ -59,6 +58,7 @@ export class Form extends Component {
     createMeme(this.state);
     event.preventDefault();
     this.handleClose();
+    alert("Meme is posted. Please refresh your page");
   };
 
   render() {
