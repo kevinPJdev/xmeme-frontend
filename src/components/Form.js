@@ -10,13 +10,13 @@ export class Form extends Component {
     super(props)
   
     this.state = {
-      username:'',
+      name:'',
       caption:'',
-      memeUrl:'',
+      rl:'',
       show: false
     }
   };
-
+  //OPEN OR CLOSE the form MODAL 
   handleClose = () => {
     this.setState({
       show: false
@@ -43,12 +43,16 @@ export class Form extends Component {
     })
   };
 
+  //sets state of the url element
   handleMemeUrlChange = (event) => {
     this.setState({
       url:event.target.value
     })
   };
 
+  componentDidMount() {
+
+  }
   //Function to call service on submit
   handleSubmit = (event) => {
     createMeme(this.state);
