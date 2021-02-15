@@ -81,13 +81,13 @@ export class Form extends Component {
           <div>
             <form onSubmit={this.handleSubmit}>
               <label>Memer Name*
-                <input type="text" placeholder="Type in your Musk Name" value={this.state.name} onChange={this.handleNameChange}></input>
+                <input type="text" placeholder="Type in your Musk Name" value={this.state.name} onChange={this.handleNameChange} required></input>
               </label>
               <label>Caption*
-                <input placeholder="Write a funny caption" type="textarea" rows={3} value={this.state.caption} onChange={this.handleCaptionChange}></input>
+                <input placeholder="Write a funny caption" type="textarea" rows={3} value={this.state.caption} onChange={this.handleCaptionChange} required></input>
               </label>
               <label display='block'>Meme URL*
-                <input type='url' placeholder="Enter a valid URL!"value={this.state.url} onChange={this.handleMemeUrlChange}></input>
+                <input type='url' placeholder="Enter a valid URL!"value={this.state.url} onChange={this.handleMemeUrlChange} required></input>
               </label>
               <Button display='block' id="btn-submit" variant="primary" type='Submit'>Submit</Button>
             </form>
