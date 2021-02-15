@@ -56,7 +56,8 @@ export class Form extends Component {
   //Function to call service on submit
   handleSubmit = (event) => {
     createMeme(this.state);
-    //event.stopPropagation()
+    event.stopPropagation();
+    location.reload();
 
   };
 
