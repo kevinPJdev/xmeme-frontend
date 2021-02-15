@@ -12,7 +12,7 @@ export class Form extends Component {
     this.state = {
       name:'',
       caption:'',
-      rl:'',
+      url:'',
       show: false
     }
   };
