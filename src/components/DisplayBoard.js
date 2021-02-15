@@ -11,7 +11,7 @@ export class  DisplayBoard extends Component {
   }
 
   async componentDidMount() {
-    const response= await fetch('/memes');
+    const response= await fetch('https://xmeme-core.herokuapp.com/memes');
     const data = await response.json();
     this.setState({meme: data});
     console.log(this.state.meme);
