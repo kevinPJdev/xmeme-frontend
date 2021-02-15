@@ -57,7 +57,7 @@ export class Form extends Component {
   handleSubmit = (event) => {
     createMeme(this.state);
     event.stopPropagation();
-    location.reload();
+    window.location.reload(false);
 
   };
 
