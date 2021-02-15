@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import createMeme from '../services/UserServices.js';
+import '../css/form.css';
 
 export class Form extends Component {
   //Initialize the form element states to empty string

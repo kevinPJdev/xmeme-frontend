@@ -22,11 +22,11 @@ export class  DisplayBoard extends Component {
            {this.state.meme.slice(0).reverse().map((memes,index) => (
             <div key={index}>
               <Card style={{ width: '18rem', height: '25rem'}} border="light" bg="dark" text="light">
-                <Card.Title>{memes.username}</Card.Title>
+                <Card.Title><div className="name-text">{memes.username}</div></Card.Title>
                 <Card.Img variant="top" src={memes.url} />
                 <Card.Body> 
                   <Card.Text>
-                   {memes.caption}
+                    <div className="body-text">{memes.caption}</div>                   
                   </Card.Text>
                 </Card.Body>
               </Card>

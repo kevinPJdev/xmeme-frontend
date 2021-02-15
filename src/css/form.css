@@ -1,0 +1,9 @@
+input[type=text],[type=url],[type=textarea],#btn-submit {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

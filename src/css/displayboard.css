@@ -1,0 +1,19 @@
+.display {
+  box-sizing: border-box;
+  padding: 50px;
+  width: 400px;
+  align-content: center;
+  border-color: red;
+  border-width: thick;
+  background-color: #726a95;
+}
+
+.body-text {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.name-text {
+  text-transform: uppercase;
+  text-decoration:lightgoldenrodyellow;
+  
+}
